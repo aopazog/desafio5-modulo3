@@ -1,0 +1,98 @@
+body {
+  background-color: grey;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  width: 80%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+h1 {
+  text-align: center;
+}
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+input[type="text"] {
+  width: 80%;
+  padding: 10px;
+  font-size: 16px;
+}
+button {
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+.summary {
+  width: 30%;
+}
+.task-list {
+  width: 60%;
+  text-align: left;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+li.completed .description {
+  text-decoration: line-through;
+  color: grey;
+}
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.task-item .id,
+.task-item .description {
+  flex: 1;
+}
+.task-item .actions {
+  display: flex;
+  align-items: center;
+}
+.task-item input[type="checkbox"] {
+  margin-left: 10px;
+}
+.delete-button {
+  color: red;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 10px;
+}
+.task-header {
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.task-header .id,
+.task-header .description,
+.task-header .actions {
+  flex: 1;
+}
